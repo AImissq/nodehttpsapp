@@ -1,0 +1,17 @@
+{
+  "name": "simple_https_server",
+  "version": "1.0.0",
+  "description": "node server with https",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "dante",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "https": "^1.0.0",
+    "path": "^0.12.7"
+  }
+}
