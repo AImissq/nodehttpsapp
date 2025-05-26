@@ -12,6 +12,7 @@ var httpsOptions = {
     ca: fs.readFileSync(path.join(__dirname, 'ssl', 'ca.crt'))
 };
 
+app.use(express.static('public'));
 app.use((req, res, next) => {
     res.removeHeader('X-Powered-By');
     res.setHeader('X-XSS-Protection', '1;mode=block');
